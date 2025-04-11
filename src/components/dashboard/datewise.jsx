@@ -16,7 +16,7 @@ const FinancialReportDashboard = () => {
     setReport(null);
 
     try {
-      const res = await fetch(`http://localhost:3000/report?date=${selectedDate}`);
+      const res = await fetch(`https://gigbackpart.onrender.com/report?date=${selectedDate}`);
       const data = await res.json();
 
       if (res.ok) {
